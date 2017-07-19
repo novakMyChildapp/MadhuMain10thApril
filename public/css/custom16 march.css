@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@font-face {
+    font-family: 'impactreg';
+    src: url('../fonts/impactreg.eot');
+    src: local('../fonts/impactreg'), url('../fonts/impactreg.woff') format('woff'), url('../fonts/impactreg.ttf') format('truetype');
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background: url(../images/main_bg.jpg) no-repeat #e3e3e5;
+    background-size: 100%;
+    background-position: center bottom;
+    padding-bottom: 80px;
+    position: relative;
+    height: 100vh;
+}
+img{
+    max-width: 100%;
+}
+a:hover{
+    text-decoration: none;
+}
+.header-top {
+    padding: 25px 0;
+}
+.register a i {
+    margin-right: 15px;
+}
+.register a {
+    float: right;
+    background: #ff950d;
+    color: #fff;
+    font-size: 26px;
+    padding: 8px 35px;
+    margin-top: 5px;
+    margin-right: 5px; 
+    letter-spacing: 2px;
+}
+.form_register h2 {
+    font-size: 42px;
+    color: #ff950d;
+    font-family: 'impactreg';
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+.form_detail {
+    margin: 100px 0;
+}
+.Form_tab li a {
+    font-size: 18px;
+    border: 1px solid #c9c7c4;
+    border-left: none;
+    float: left;
+    color: #696969;
+    border-radius: 0 !important;
+    font-weight: bold;
+    padding: 13px 5px;
+    width: 100%;
+    background: rgba(228, 228, 230, 0.8)
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #323232;
+    cursor: default;
+    background-color: #f1f1f1;
+    border: 1px solid #c9c7c4 !important;
+    border-bottom-color: transparent;
+    font-weight: bold;
+}
+.nav-tabs > li {
+    margin-bottom: 0;
+    width: 33.333%;
+    text-align: center;
+}
+.tab-content {
+    background: rgba(255, 255, 255, .30);
+    padding: 25px 20px;
+    border: 1px solid rgba(185, 182, 177, 0.30);
+    border-top: none;
+    float: left;
+    width: 100%;
+    min-height: 240px;
+}
+.tab-content form input {
+    border: 1px solid #b9b6b1;
+    padding: 0 10px;
+    height: 53px;
+    width: calc(100% - 55px);
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    color: #5d5d5d;
+    font-family: 'Roboto', sans-serif;
+}
+.tab-content form p {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.tab-content form p:before {
+    width: 55px;
+    float: left;
+    height: 53px;
+    text-align: center;
+    line-height: 53px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid #b9b6b1;
+    border-right: none;
+    color: #bac7c0;
+    font-size: 22px;
+}
+.tab-content form a {
+    color: #5d5d5d;
+    font-size: 14px;
+}
+.tab-content form button {
+    float: right;
+    background: #ff950d;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding: 5px 20px;
+}
+.tab-content form button i{
+    margin-right: 10px;
+}
+.nav-tabs > li > a:hover {
+    border-color: #ccc;
+    background: #fff;
+}
+.tab-content form button:hover, .register a:hover {
+    background: #333;
+}
+.tab-content form a:hover{
+    color: #ff950d;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+.copy p {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: .5px;
+    padding: 15px 0;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.form_register {
+    max-width: 600px;
+}

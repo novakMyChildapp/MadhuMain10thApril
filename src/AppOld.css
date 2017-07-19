@@ -1,0 +1,173 @@
+/*Home Css*/
+@CHARSET "UTF-8";
+/*
+over-ride "Weak" message, show font in dark grey
+*/
+
+.progress-bar {
+    color: #333;
+} 
+
+/*
+Reference:
+http://www.bootstrapzen.com/item/135/simple-login-form-logo/
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+    .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    @include box-sizing(border-box);
+
+    &:focus {
+      z-index: 2;
+    }
+  }
+
+body {
+  background: url(http://139.59.7.53:3001/BG.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 2000px;
+  padding-top: 70px;
+}
+.green {
+  background: url(https://www.replicata.com/common/img/zusatz/7120101042/7120101042-01.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 2000px;
+  padding-top: 70px;
+}
+.green h3{
+  color: white;
+}
+.login-form {
+  margin-top: 60px;
+}
+
+form[role=login] {
+  color: #5d5d5d;
+  background: #f2f2f2;
+  padding: 26px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+  form[role=login] img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+  form[role=login] input,
+  form[role=login] button {
+    font-size: 18px;
+    margin: 16px 0;
+  }
+  form[role=login] > div {
+    text-align: center;
+  }
+
+.register-form {
+  margin-top: 60px;
+}
+
+form[role=register] {
+  color: #5d5d5d;
+  background: #f2f2f2;
+  padding: 26px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+  form[role=register] img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+  form[role=register] input,
+  form[role=register] button {
+    font-size: 18px;
+    margin: 16px 0;
+  }
+  form[role=register] > div {
+    text-align: center;
+  }
+.active{
+  color: white !important ;
+}
+.errorM{
+  color: red
+}
+
+.button.disabled {
+  opacity: 0.65; 
+  cursor: not-allowed;
+}
+
+/*Nav bar*/
+.navbar-inverse { height: 77px !important;background-color: rgba(138, 109, 59, 0.05) !important;}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{ float:right; }
+.logo {display: inline-block;margin-top:10px;}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {background-color: rgba(0,0,0,.0001) !important;}
+
+
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+div.cardcontainer {
+    /*background-color: #FF0000;*/
+    margin: auto;   
+    width: 100%;
+}
+
+div.mainteacherCard {
+
+    float: left;
+    width: 500px;
+    margin-left: 25%
+}
+
+div.mainStudentCard {
+
+    float: right;
+    width: 500px;
+    margin-right: 25%;
+}

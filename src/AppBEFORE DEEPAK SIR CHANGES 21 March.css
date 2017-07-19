@@ -1,0 +1,864 @@
+/*Home Css*/
+@CHARSET "UTF-8";
+/*
+over-ride "Weak" message, show font in dark grey
+*/
+
+.progress-bar {
+    color: #333;
+} 
+
+/*
+Reference:
+http://www.bootstrapzen.com/item/135/simple-login-form-logo/
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+    .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    @include box-sizing(border-box);
+
+    &:focus {
+      z-index: 2;
+    }
+  }
+body {
+    background: url(http://139.59.7.53:3001/BG.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.green {
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("http://139.59.7.53:3001/p1.png");
+  background-origin: padding-box;
+  background-repeat: repeat;
+  background-size: auto auto;
+}
+/*body{
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color:#ffffff;
+  background-image: url("http://139.59.7.53:3001/p1.png");
+  background-origin: padding-box;
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: auto auto;min-height: 2000px;
+  padding-top: 70px;
+}
+
+
+.green {
+  background: url("http://139.59.7.53:3001/p1.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 2000px;
+  padding-top: 70px;
+}*/
+.green h3{
+  color: white;
+}
+.login-form {
+  margin-top: 60px;
+}
+
+form[role=login] {
+  color: #5d5d5d;
+  background: #f2f2f2;
+  padding: 26px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+  form[role=login] img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+  form[role=login] input,
+  form[role=login] button {
+    font-size: 18px;
+    margin: 16px 0;
+  }
+  form[role=login] > div {
+    text-align: center;
+  }
+
+.register-form {
+  margin-top: 60px;
+}
+
+form[role=register] {
+  color: #5d5d5d;
+  background: #f2f2f2;
+  padding: 26px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+  form[role=register] img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+  form[role=register] input,
+  form[role=register] button {
+    font-size: 18px;
+    margin: 16px 0;
+  }
+  form[role=register] > div {
+    text-align: center;
+  }
+.active{
+  color: white !important ;
+}
+.errorM{
+  color: red
+}
+
+.button.disabled {
+  opacity: 0.65; 
+  cursor: not-allowed;
+}
+
+/*Nav bar*/
+.navbar-inverse { height: 77px !important;background-color: rgba(138, 109, 59, 0.05) !important;}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{ float:right; }
+.logo {display: inline-block;margin-top:10px;}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {background-color: rgba(0,0,0,.0001) !important;}
+
+
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+div.cardcontainer {
+    /*background-color: #FF0000;*/
+    margin: auto;   
+    width: 100%;
+}
+
+div.mainteacherCard {
+
+    float: left;
+    width: 500px;
+    margin-left: 25%
+}
+
+div.mainStudentCard {
+
+    float: right;
+    width: 500px;
+    margin-right: 25%;
+}
+/**************2/20/17***************/
+
+
+.cardcontainer {
+  float: left;
+  width: 100%;
+}
+
+.outside-contain .mainteacherCard {
+  float: left;
+  margin: 0;
+  padding: 0 30px;
+  width: 50%;
+}
+.outside-contain .mainStudentCard {
+  float: left;
+  margin: 0;
+  padding: 0 30px;
+  width: 50%;
+}
+
+.mainteacherCard .card.Boxed, .mainStudentCard .card.Boxed {
+  min-height: auto !important;
+  position: relative;
+  width: 100% !important;
+}
+.mainteacherCard .card.Boxed::after{
+  background-color: #ff950d;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+ .mainStudentCard .card.Boxed::after {
+  background-color: #ff950d;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.mainteacherCard .card.Boxed, .mainStudentCard .card.Boxed {
+  background-color: #fff;
+  border: medium none;
+  box-shadow: 2px 2px 2px 2px #ccc;
+  padding: 30px 0;
+}
+.mainteacherCard .card-block h4.card-title, .mainteacherCard .card-block p.card-text {
+  color:  #4da64d;
+}
+.mainStudentCard .card-block h4.card-title, .mainStudentCard .card-block p.card-text {
+  color:#0e75de;
+}.cardcontainer .card img.card-img-top {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  max-width: 100px;
+}
+.container-inner-teacher {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.mainStudentCard .card.Boxed::before {
+  background-color: #0A74E2;
+  content: "";
+  height: 3px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+}
+.mainteacherCard .card.Boxed::before {
+  background-color: #4DA54D;
+  content: "";
+  height: 3px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+}
+.register a {
+
+  font-size: 14px;
+  letter-spacing: 0;
+ 
+}.App div h3 {
+  color: #333;
+  font-size: 18px;
+}
+.header-top .logo {
+
+  margin-top: 0;
+}
+.tab-content form input {
+ box-shadow: none;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+ 
+}.form_detail .form_register h2 {
+ 
+  font-size: 30px;
+ 
+ 
+  text-align: left;
+  
+}
+.Form_tab ul.nav.nav-tabs li a {
+  font-size: 16px;
+  padding: 12px;
+}
+.register a {
+  font-size: 14px;
+  
+  margin-top: 12px;
+}.tab-content form button {
+ 
+  font-size: 16px;
+  letter-spacing: 0;
+  
+}.tab-content form button i {
+  margin-right: 5px;
+}.tab-content form p::before {
+ 
+  border-color: #ccc;
+ 
+}
+/**************2/20/17***************/
+
+.TeacherM {
+    float: left;
+    width: 100%;
+}
+.Studentsalreadyassigned {
+    float: left;
+    width: 100%;
+    /* text-align: left; */
+}
+.studentContainer {
+    float: left;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.containerTimeline {
+  max-width:700px;
+  margin:0 auto;
+  text-align:center;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  background-color:#FAFAFA;
+}
+.headTimeline {
+  -webkit-border-radius:6px 6px 0px 0px;
+  -moz-border-radius:6px 6px 0px 0px;
+  border-radius:6px 6px 0px 0px;
+  background-color:#2ABCA7;
+  color:#FAFAFA;
+}
+.Timelineh2 {
+  text-align:center;
+  padding:18px 0 18px 0;
+  font-size: 1.4em;
+}
+input.timelineInput {
+  margin-bottom:10px;
+}
+textarea.timelineInput {
+  height:150px;
+  margin-bottom:10px;
+}
+input.t:first-of-type
+{
+  margin-top:35px;
+}
+input, textarea {
+  font-size: 1em;
+  padding: 15px 10px 10px;
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  border: 1px solid #cecece;
+  background: #d7d7d7;
+  color:#FAFAFA;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 600px;
+}
+::-webkit-input-placeholder {
+   color: #FAFAFA;
+}
+:-moz-placeholder {
+   color: #FAFAFA;  
+}
+::-moz-placeholder {
+   color: #FAFAFA; 
+}
+:-ms-input-placeholder {  
+   color: #FAFAFA;  
+}
+button {
+  margin-top:15px;
+  margin-bottom:25px;
+  background-color:#2ABCA7;
+  padding: 12px 45px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #2ABCA7;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+  cursor: pointer;
+  width:30%;
+  color:#fff;
+}
+button:hover, .button:hover {
+  background:#19a08c;
+}
+label.error {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1em;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#d89c9c;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+/* media queries */
+@media (max-width: 700px) {
+  label.error {
+    width: 90%;
+  }
+  input, textarea {
+    width: 90%;
+  }
+  button {
+    width:90%;
+  }
+  body {
+  padding-top:10px;
+  }  
+}
+hr.style18 { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr.style18:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+/***************/
+.card-block a {
+  display: inline-block;
+}
+.card-block button {
+  margin: 0;
+  width: auto;
+}
+.card-block .card-text {
+  margin-bottom: 20px;
+}
+.teacher-view-detail, .student-with-teacher {
+  margin-bottom: 40px;
+}.welcome-list-head > h1 {
+ color: #ff950d;
+ 
+  font-size: 30px;
+  padding: 10px 0;
+}.TeacherM h2, .TeacherM h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.school-list-caption > h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+} .card img {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  max-width: 100px;
+}.card{
+
+  padding:30px;
+}
+#contact input{
+padding:10px;
+
+}#contact .containerTimeline {
+  margin-bottom: 40px;
+}.post-des-wrap .media-body {
+  text-align: left;
+}.Timelineh2 {
+  margin-bottom: 20px;
+  padding: 12px 0;
+}
+.list-inline span {
+  color: #2f3239;
+  font-size: 13px;
+}
+.list-inline > li {
+  color: #777;
+
+  font-size: 14px;
+ 
+  vertical-align: text-top;
+}
+.post-des-wrap .media-body > p {
+  margin: 0;
+}.post-des-wrap .media-body h4, .post-des-wrap .media-body p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.media .media-body h4 span, .media .media-body p span {
+  font-weight: 600;
+}
+.post-des-wrap ul.list-inline {
+  border-top: 1px solid #dedede;
+  margin-top: 0;
+  padding: 10px 0 0;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+}
+textarea::-webkit-input-placeholder,input::-webkit-input-placeholder{
+  color: #666;
+}
+#contact input, #contact textarea {
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  color: #666;
+  font-size: 14px;
+  padding: 8px;
+  width: 90%;
+}
+.navbar-collapse .nav.navbar-nav {
+  float: right;
+}
+#contact button {
+  padding: 10px 15px;
+}
+
+.comment {
+    background: #fff none repeat scroll 0 0;
+  border: 1px solid #dedede;
+  border-radius: 0;
+ box-shadow: 0 0 5px #dedede;
+  font-size: 14px;
+  margin: 0 auto 20px;
+  max-width: 700px;
+  padding: 20px;
+  text-align: left;
+}.comment span {
+  font-weight: bold;
+}.post-des-wrap .well {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #dedede;
+  border-radius: 0;
+  box-shadow: 0 0 5px #dedede;
+
+  margin: 10px auto;
+  max-width: 700px;
+}.teacher-view-detail .card.Boxed {
+  float: none !important;
+  margin: auto !important;
+  
+}nav.navbar.navbar-fixed-top {
+  
+  min-height: 100px;
+  
+}
+.navbar-header .navbar-brand.page-scroll {
+  max-width: 200px;
+  height: auto !important;
+}
+
+.navbar-nav > li > a{
+   padding: 40px 15px !important;
+}
+.header-top .logo {
+  max-width: 200px;
+}
+
+.posts-in {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  margin: 0 auto 20px;
+  max-width: 700px;
+  padding: 20px 0px;
+}
+.posts-single-inner {
+  overflow-wrap: break-word;
+  text-align: left;
+}
+.teacher-sec, .student-sec {
+  display: inline-block;
+  padding: 0 15px;
+  vertical-align: top;
+  width: 50%;
+}
+.teacher-pro img, .student-pro img {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: auto;
+  padding: 5px;
+  width: 100px;
+}
+.teacher-pro, .student-pro {
+  float: left;
+  margin-bottom: 15px;
+  padding-right: 10px;
+}.teacher-detail, .student-detail {
+  overflow: hidden;
+}.img-posts {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto 20px;
+  max-width: 700px;
+  padding: 20px;
+}.img-posts img {
+  width: 100%;
+}
+.head-descr {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  
+  margin: 0 auto;
+  max-width: 665px;
+  padding: 20px 15px;
+}
+.form_detail form textarea.form-control {
+    padding: 0 10px;
+    height: 80px;
+    width: calc(100% - 55px);
+    background: rgba(255, 255, 255, 0.6);
+    color: #5d5d5d;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: none;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    line-height: 40px;
+    border-radius: 0;
+}
+.tab-content form p.textarea-wrap:before {
+  
+    height: 80px;
+   
+    line-height: 80px;
+   
+}
+/***************/
+
+
+@media screen and (max-width:768px) {
+
+
+.posts-in {
+ 
+  font-size: 11px;
+ 
+}
+.teacher-sec, .student-sec {
+ 
+  width: 100%;
+}
+  .navbar-collapse .nav.navbar-nav {
+  float: left;
+}
+  .header-top .logo {
+  max-width: 150px;
+}
+  .navbar-header .navbar-brand.page-scroll {
+  max-width: 150px;
+  
+}
+  .navbar-nav > li > a {
+  padding: 10px 15px !important;
+}
+.navbar-toggle .icon-bar {
+  border: 1px solid #000;
+
+}.navbar-brand, .navbar-nav > li > a {
+  text-align: left;
+ 
+}
+  .navbar-brand {
+ 
+  height: auto;
+  
+}
+.card {
+  margin: 0 !important;
+  width: auto !important;
+}.containerTimeline {
+
+  margin: 0px 15px;
+}
+.media a {
+  margin: 0 auto 15px;
+  padding: 0 !important;
+  text-align: center;
+  width: 100%;
+}
+
+.media a img {
+  width: 100%;
+}.list-inline span {
+
+  font-size: 12px;
+}.navbar-header button {
+  width: auto;
+}
+
+}
+
+
+
+
+
+/* New Style */
+footer {
+  display: inline-block;
+  width: 100%;
+}
+.form_detail.teacher_form_stru {
+  margin: 50px 0;
+}
+.form_detail.teacher_form_stru .form_register {
+  max-width: 100%;
+}
+.form_main_stru2 {
+  display: inline-block;
+  width: 100%;
+}
+.form_main_stru2 .form_group {
+  display: inline-block;
+  width: 100%;
+}
+.form_main_stru2 .form_group .half {
+  float: left;
+  padding: 0 15px;
+  width: 50%;
+}
+.form_main_stru2 .form_group.child_ele {
+  margin-left: -15px;
+  width: calc(100% + 30px);
+}
+.form_main_stru2 .form_group textarea#taddress , .form_main_stru2 .form_group textarea#saddress {
+  line-height: 24px;
+  max-width: calc(100% - 55px);
+  padding-bottom: 6px;
+  padding-top: 6px;
+  width: 100%;
+}
+.form_main_stru2 form button {
+  background-color: #347ab6;
+  margin-top: 0;
+  max-width: 140px;
+  padding: 12px 15px;
+  width: 100%;
+}
+
+
+
+.form_main_stru2 .Form_tab {
+  border: 1px solid #347ab6;
+  border-radius: 10px 10px 0 0;
+  display: inline-block;
+  width: 100%;
+}
+.form_main_stru2 .Form_tab ul.nav {
+  float: left;
+  width: 100%;
+}
+.form_main_stru2 .Form_tab ul.nav li {
+  float: left;
+  width: 100%;
+}
+.form_main_stru2 .Form_tab ul.nav li a {
+  background-color: #347ab6;
+  border: medium none !important;
+  border-radius: 8px 8px 0 0 !important;
+  color: #fff;
+  float: left;
+  padding: 12px 25px;
+  text-align: left;
+  width: 100%;
+}
+.form_main_stru2 .Form_tab .tab-content {
+  background-color: #fff;
+  float: left;
+  width: 100%;
+}
+.form_main_stru2 span.errorM {
+  float: left;
+  font-family: "Roboto",sans-serif;
+  font-size: 13px;
+  margin-left: 55px;
+  margin-top: 5px;
+  text-align: left;
+  width: calc(100% - 55px);
+}
+footer .copy p {
+  color: #555;
+  text-shadow: none;
+}
+.form_main_stru2 > h2 {
+  color: #555;
+}
+.header-top .logo {
+  float: left;
+  max-width: 140px;
+}
+.header-top {
+  padding: 0 0 35px;
+}
+header .header-top .container {
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 25px;
+  padding: 20px 15px;
+}
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: static;
+}
+.containerTimeline {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+}
+/* New Style */

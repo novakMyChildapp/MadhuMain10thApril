@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@font-face { font-family: 'impactreg'; src: url('../fonts/impactreg.eot'); src: local('../fonts/impactreg'), url('../fonts/impactreg.woff') format('woff'), url('../fonts/impactreg.ttf') format('truetype'); }
+body { font-family: 'Roboto', sans-serif; font-size: 18px; padding-bottom: 80px; position: relative; height: 100vh; }
+img { max-width: 100%; }
+a:hover { text-decoration: none; }
+.header-top { padding: 25px 0; }
+.register { display: inline-block; }
+.register a { display: inline-block; font-size: 16px; font-weight: 600; line-height: 40px; margin-left: 30px; color: #333; }
+.register a:first-child { color: #666; }
+.register a:last-child { color: #fff; background: #eb931f; padding: 0 20px; }
+.register a i { margin-right: 15px; }
+.form_register h2 { font-size: 26px; color: #ff950d; font-weight: 600; line-height: 36px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px; margin-top: 50px; }
+.form_detail { margin: 100px 0; }
+.Form_tab ul { border:none; }
+.Form_tab li a { font-size: 18px; float: left; color: #696969; border-radius: 0 !important; font-weight: bold; padding: 12px 5px; width: 100%; background: rgba(228, 228, 230, 0.8); }
+.Form_tab ul.nav.nav-tabs li a:hover { background: rgba(255, 255, 255, 0.3); border:none; }
+.Form_tab ul.nav.nav-tabs li.active a, .Form_tab ul.nav.nav-tabs li.active a:focus { background-color: #fff; color: #000; }
+.nav-tabs > li { margin-bottom: 0; width: 33.333%; text-align: center; }
+.tab-content { background: rgba(255, 255, 255, .30); padding: 25px 20px; border: 1px solid rgba(185, 182, 177, 0.30); border-top: none; float: left; width: 100%; min-height: 240px; }
+.tab-content form input { border: 1px solid #b9b6b1; padding: 0 10px; height: 53px; width: calc(100% - 55px); background: rgba(255, 255, 255, 0.6); font-size: 18px; color: #5d5d5d; font-family: 'Roboto', sans-serif; }
+.tab-content form p { width: 100%; margin-bottom: 20px; }
+.tab-content form p:before { width: 55px; float: left; height: 53px; text-align: center; line-height: 53px; background: rgba(255, 255, 255, 0.6); border: 1px solid #b9b6b1; border-right: none; color: #bac7c0; font-size: 22px; }
+.tab-content form a { color: #5d5d5d; font-size: 14px; }
+.tab-content form button { float: right; background: #ff950d; border: none; color: #fff; font-size: 22px; letter-spacing: 2px; padding: 8px 20px; }
+.tab-content form button i { margin-right: 10px; }
+.tab-content form button:hover { background: #333; }
+.tab-content form a:hover { color: #ff950d; }
+footer { /*position: absolute;*/ bottom: 0; right: 0; width: 100%; }
+.copy { bottom: 0; left: 0; position: fixed; width: 100%; }
+.copy p { color: #fff; font-size: 14px; letter-spacing: .5px; padding: 15px 0; text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); }
+.form_register { max-width: 600px; }
+.uploaded-images {
+  display: inline-block;
+  width: 100%;
+	margin-bottom: 20px;
+}
+.uploaded-images h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.comment .Commentpost .C_name {
+  display: inline-block;
+}
+.comment .Commentpost .C_name a {
+  border-bottom: 1px solid #eee;
+  display: inline-block;
+  width: auto;
+}
